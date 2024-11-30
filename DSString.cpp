@@ -1,10 +1,18 @@
 #include "DSString.h"
-
-/* 
- * Implement the functions defined in DSString.h. You may add more functions as needed
- * for the project. 
- *
- * Note that c-strings don's store an explicit length but use `\0` as the terminator symbol
- * but your class should store its length in a member variable. 
- * DDO NOT USE C-STRING FUNCTIONS <string.h> or <cstring>.
- */  
+//default dsstring contructor
+DSString::DSString(){
+    data = new char[1];
+    //null
+    data[0] = '\0';
+    length = 0;
+}
+//c-string constructor
+DSString::DSString(const char *str){
+    int i;
+    length = setlength(stl);
+    data = new char[length + 1];
+    data[length] = '\0';
+    for(i=0; i < length; 1++){
+        data[i] = stl.data[i];
+    }
+}

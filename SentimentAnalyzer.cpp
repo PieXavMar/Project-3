@@ -1,5 +1,6 @@
 #include "SentimentAnalyzer.h"
 #include <set>
+#include <sstream>
 //training method
 void SentimentAnalyzer::trainModel(DSString fileName){
     ifstream input(fileName.c_str());

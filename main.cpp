@@ -1,9 +1,6 @@
 #include <iostream>
-
-
-int main(int argc, char** argv)
-{  
-    std::cout << "I will be a sentiment analyzer!" << std::endl;
-
+using namespace std;
+int main(int argc, char** argv){  
+    cout << "I will be a sentiment analyzer!" << endl;
     return 0;
 }
